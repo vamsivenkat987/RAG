@@ -5,12 +5,12 @@ import { createAgent } from "langchain";
 import { ChatOpenAI } from "@langchain/openai";
 import path from 'path';
 import process from 'process';
+import fs from 'fs';
+import netrc from 'netrc';
 
 // Set SSL certificate environment variables (like in your Python code)
 const certPath = path.resolve('oneEGaDCA.crt');
-process.env.SSL_CERT_FILE = certPath;
-process.env.REQUESTS_CA_BUNDLE = certPath;
-process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0'; // For Node.js specifically
+process.env.NODE_EXTRA_CA_CERTS = certPath;
 
 // Read netrc credentials
 function getNetrcCredentials() {

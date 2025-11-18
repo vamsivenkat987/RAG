@@ -15,6 +15,7 @@
     "@langchain/core": "^1.0.5",
     "@langchain/openai": "^1.1.1",
     "langchain": "^1.0.4",
+    "netrc": "^0.1.4",
     "netrc-parser": "^3.1.6",
     "pdf-parse": "^1.1.1",
     "zod": "^3.25.76"

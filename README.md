@@ -153,7 +153,11 @@ new Rag(query, document)
 
 ### SSL Certificate Issues
 If you encounter SSL certificate errors, ensure:
+<<<<<<< HEAD
 1. `oneEGaDCA.crt` is in the project root
+=======
+1. `oneEGaDCA.crt` is in the project root, add it as  `export NODE_EXTRA_CA_CERTS="oneEGaDCA.crt"`
+>>>>>>> c5d4f6d (Add first RAG project commit)
 2. `NODE_TLS_REJECT_UNAUTHORIZED=0` is set (handled automatically)
 
 ### Module Type Warnings
